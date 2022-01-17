@@ -1,6 +1,6 @@
 import sys
 from collections import deque
-
+# bfs_dfs 이론문제
 
 def bfs(v):
     q = deque()
@@ -25,8 +25,8 @@ def dfs(v):
 
 n, m, v = map(int, sys.stdin.readline().split())
 arr = [[0] * (n + 1) for _ in range(n + 1)]
-visited = [False] * (n + 1)
-visited2 = [False] * (n + 1)
+visited = [False] * (n + 1) # bfs 방문처리 배열
+visited2 = [False] * (n + 1) # dfs 방문처리 배열
 
 for _ in range(m):
     a, b = map(int, sys.stdin.readline().split())
