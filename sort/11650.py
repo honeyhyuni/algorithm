@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/11650
 import sys
 n = int(sys.stdin.readline())
 a = []
