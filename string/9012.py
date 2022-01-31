@@ -1,3 +1,4 @@
+# https://www.acmicpc.net/problem/9012
 n = int(input())
 for _ in range(n):
     arr = list(input())
