@@ -7,3 +7,5 @@ def solution(arr, divisor):
     if not answer:
         answer.append(-1)
     return sorted(answer)
+
+print(solution([5, 9, 7, 10], 5))
