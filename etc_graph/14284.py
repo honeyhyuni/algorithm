@@ -1,4 +1,5 @@
 # https://www.acmicpc.net/problem/14284
+# 다익스트라 이론문제
 from heapq import heappop, heappush
 
 n, m = map(int, input().split())
