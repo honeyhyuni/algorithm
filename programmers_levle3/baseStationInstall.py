@@ -3,14 +3,9 @@ def solution(n, stations, w):
     answer = 0
     arr = [[-1, 0]]
     for i in stations:
-        x, y = i-w, i+w
-        if i - w < 0:
-            x = 0
-        if i + w > n:
-            y = n
-        arr.append([x, y])
+        arr.append([i-w, i+w])
     arr.append([n+1, n+1])
-    stack = [0]
+    stack = [-1]
     for i in range(len(arr)):
         temp = arr[i][0] - stack[-1] -1
         if temp > 0:
