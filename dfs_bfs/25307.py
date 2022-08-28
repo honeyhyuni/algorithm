@@ -10,7 +10,6 @@ def dont_go():
     while maq_q:
         x, y, cnt = maq_q.popleft()
         if cnt < k:
-            visited[x][y] = True
             for _ in range(4):
                 nx = x + dx[_]
                 ny = y + dy[_]
